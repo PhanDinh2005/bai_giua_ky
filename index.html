@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Giới thiệu bản thân</title>
+    <meta name="description" content="Trang giới thiệu cá nhân" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="nav" role="banner">
+        <a class="brand" href="#">
+          <img src="./img/logo.png" alt="Logo cá nhân" class="logo-img" />
+          <div>
+            <div class="site-title">Phan Văn Đỉnh</div>
+            <div class="site-sub">Frontend Developer</div>
+          </div>
+        </a>
+
+        <nav role="navigation">
+          <div class="nav-links" id="navLinks">
+            <a href="#about">Giới thiệu</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+            <a class="cta" href="#contact">Tuyển dụng</a>
+          </div>
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            aria-label="Mở menu"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+
+          <!-- Mobile menu (hidden on desktop) -->
+          <div class="menu-panel" id="mobileMenu" style="display: none">
+            <a href="#about">Giới thiệu</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+            <a class="cta" href="#contact">Tuyển dụng</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-label="Banner chính">
+          <div class="hero-card">
+            <div class="intro">Xin chào, tôi là</div>
+            <h1>Phan Văn Đỉnh</h1>
+            <p class="lead">
+              Tôi là một Frontend vừa học xây dựng giao diện web.
+            </p>
+            <div
+              style="
+                margin-top: 18px;
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+              "
+            >
+              <a class="cta" href="#projects">Xem dự án</a>
+              <a href="#contact" class="link">Liên hệ</a>
+            </div>
+          </div>
+
+          <aside class="profile-panel" aria-label="Thông tin nhanh">
+            <div class="avatar">
+              <img src="./img/anh1.png" alt="Ảnh cá nhân" />
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <strong>2</strong><span class="muted">Dự án</span>
+              </div>
+              <div class="stat">
+                <strong>0,2</strong><span class="muted">Năm kinh nghiệm</span>
+              </div>
+              <div class="stat">
+                <strong>Open</strong
+                ><span class="muted">Sẵn sàng nhận việc</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <!-- THÔNG TIN CÁ NHÂN -->
+        <section id="about" class="card info-card">
+          <img src="img/gtbt.png" alt="Ảnh minh họa" />
+          <div>
+            <h2>Thông tin cá nhân</h2>
+            <ul>
+              <li><strong>Họ tên:</strong> Phan Văn Đỉnh</li>
+              <li><strong>Ngày sinh:</strong> 12/08/2005</li>
+              <li><strong>Địa chỉ:</strong> Phú Yên, Việt Nam</li>
+              <li><strong>Email:</strong> dinhphan0511@gmail.com</li>
+              <li><strong>SĐT:</strong> 0901 234 567</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- MỤC TIÊU NGHỀ NGHIỆP -->
+        <section class="card info-card reverse">
+          <img src="img/mt.png" alt="Ảnh minh họa" />
+          <div>
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <p>
+              Mục tiêu của tôi là trở thành một Frontend Engineer có thể phát
+              triển các sản phẩm có tầm ảnh hưởng, kết hợp giữa kỹ thuật và trải
+              nghiệm người dùng.
+            </p>
+          </div>
+        </section>
+
+        <!-- SỞ THÍCH -->
+        <section class="card info-card">
+          <img src="img/st.png" alt="Ảnh minh họa" />
+          <div>
+            <h2>Sở thích</h2>
+            <p>
+              Tôi thích coding, nghe nhạc, chơi cờ vua, và đọc các tài liệu về
+              UX/UI hiện đại.(phét)
+            </p>
+          </div>
+        </section>
+
+        <!-- NGÔN NGỮ & KỸ NĂNG -->
+        <section class="card info-card reverse">
+          <img src="img/sc8.0.png" alt="Ảnh minh họa" />
+          <div>
+            <h2>Ngôn ngữ & Kỹ năng</h2>
+            <ul>
+              <li>HTML / CSS / JavaScript /</li>
+              <li>Ngôn ngữ: Tiếng Việt, Tiếng Anh</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CHỨNG CHỈ - GIẢI THƯỞNG -->
+        <section class="card info-card">
+          <img src="img/icpc.png" alt="Ảnh minh họa" />
+          <div>
+            <h2>Chứng chỉ - Giải thưởng</h2>
+            <ul>
+              <li>Tham gia ICPC 2025 - Đang luyện tập</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- DỰ ÁN -->
+        <section id="projects" class="card1">
+          <h2>Dự án</h2>
+          <div class="project-grid">
+            <div class="project">
+              <img src="./img/prj1.png" alt="Dự án 1" />
+              <h3>Website Portfolio</h3>
+              <p>Trang giới thiệu cá nhân responsive bằng HTML, CSS, JS.</p>
+            </div>
+            <div class="project">
+              <img src="./img/prj2.png" alt="Dự án 2" />
+              <h3>Weather App</h3>
+              <p>Ứng dụng xem thời tiết sử dụng API OpenWeather.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- LIÊN HỆ -->
+        <section id="contact" class="card1">
+          <h2>Liên hệ</h2>
+          <ul class="socials">
+            <li><a href="https://github.com/PhanDinh2005">GitHub</a></li>
+            <li><a href="https://www.facebook.com/graperuu">Facebook</a></li>
+            <li>
+              <a href="https://www.instagram.com/ph.dinhhh/">Instagram</a>
+            </li>
+            <li><a href="mailto:dinhphan0511@gmail.com">Email</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      // Mobile menu toggle
+      (function () {
+        const btn = document.getElementById("menuBtn");
+        const panel = document.getElementById("mobileMenu");
+        if (!btn || !panel) return;
+        btn.addEventListener("click", () => {
+          const open = panel.style.display === "block";
+          panel.style.display = open ? "none" : "block";
+          btn.setAttribute("aria-expanded", String(!open));
+          btn.setAttribute("aria-label", open ? "Mở menu" : "Đóng menu");
+        });
+        // Close on link click
+        panel.querySelectorAll("a").forEach((a) =>
+          a.addEventListener("click", () => {
+            panel.style.display = "none";
+            btn.setAttribute("aria-expanded", "false");
+          })
+        );
+        // Close on outside click
+        document.addEventListener("click", (e) => {
+          if (!panel.contains(e.target) && e.target !== btn) {
+            panel.style.display = "none";
+            btn.setAttribute("aria-expanded", "false");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
